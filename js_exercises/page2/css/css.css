@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background-color: #fff;
+  background: url("../images/bookshelf.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;}
+
+h1 {
+  /*background: #1e1b1e url("../images/...") no-repeat;*/
+  width: 230px;
+  height: 180px;
+  float: left;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0px;}
+
+h2 {
+  margin: 1.75em 0 0 0;
+  color: #adffda; 
+  font-weight: normal;}
+
+h2 + p {
+  margin: 0.25em 0 0 0;}
+p + p {
+  margin: 0;}
+p + h2 {
+  margin: 10px 0 0 0;}
+
+
+#message {
+  float: left;
+  clear: left;
+  background-color: #ffb87a;
+  color: #1e1b1e;
+  width:170px;
+  padding: 18px 30px;
+  text-align: center;}
+
+
+#info {
+  background-color: #1e1b1e;
+  color: #fff;
+  width: 200px;
+  padding: 0px 15px;
+  text-align: center;
+  min-height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 15%;}
+
+#footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #adffda;}
+
+#footer p {
+  padding: 10px;
+  margin: 0px;}
+
+.data {
+  padding: 10px;}
+
+.question {
+  text-align: left;
+  text-align: left;
+  color: black;
+  font-size: 24px;
+}
+
+textarea#sentence {
+  line-height: 1em;
+  width: 584px;
+  height: 130px;
+}
+
+button#btn {
+  text-align: center;
+  margin: 0px 10px 10px 230px;
+  padding: 5px;
+  bottom: 0px;
+  left: 0px;
+  width: 292px;
+  background-color: green;
+  color: white;
+}
+
+p#result {
+  padding-top: 0;
+  padding-left: 0;
+}
+  

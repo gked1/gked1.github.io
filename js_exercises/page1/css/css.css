@@ -1,0 +1,57 @@
+
+body { 
+    font-family: "Courier New", Courier, monospace;
+    background: url("../images/clock-header.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+body.background {
+  filter: blur(35px);
+}
+
+h1, h3, p {
+    float: left;
+    clear: left;
+    width: 380px;
+    background-color: #fff;
+    color: #5a514c;
+    text-align: center;}
+
+
+h1 {
+    margin: 50px 0px 0px 50px;
+    height: 175px;
+    /*background-image: url("../images/...");*/
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    border-top: 1px solid #bcbdc0;
+    border-left: 1px solid #bcbdc0;
+    border-right: 1px solid #bcbdc0;}
+	
+h3 {
+    margin: 0px 0px 0px 50px;
+    padding: 25px 0px 0px 0px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 0.80em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    border-left: 1px solid #bcbdc0;
+    border-right: 1px solid #bcbdc0;}
+
+p {
+    margin: 0px 0px 0px 50px;
+    padding: 30px 0px 25px 0px;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #bcbdc0;
+    border-bottom: 1px solid #bcbdc0;
+    border-left: 1px solid #bcbdc0;}
+

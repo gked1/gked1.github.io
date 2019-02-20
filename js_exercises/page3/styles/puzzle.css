@@ -1,0 +1,64 @@
+
+body { 
+  font-family: Gotham, Helvetica, Arial, sans-serif;
+  background: #4472C4 url('../images/bg.png');
+  margin: 0; 
+  text-align: center; 
+}
+
+table {
+  border-collapse: collapse; 
+  border-spacing: -2px;
+}
+
+td {
+  padding: 0;
+  margin: 0; 
+}
+
+img { 
+  height: 69px;
+  width: 69px;
+  padding: 0;
+  margin: -3.5px 0 0 0; 
+}
+
+#puzzle { 
+  margin: 115px auto 0 auto; 
+  width: 785px; 
+}
+#logo { 
+  background: url('../images/logotype.png') no-repeat; 
+  background-size: 80%;
+  float: left; 
+  height: 0; 
+  overflow: hidden;
+  padding: 188px 0 0 0; 
+  width: 450px; 
+}
+#puzzleGrid { 
+  /*background: url('../images/bgGrid.png');*/
+  float: right; 
+  height: 280px; 
+  padding: 26px; 
+  width: 280px; 
+}
+
+#puzzleGrid.win { 
+  background: url('../images/bgGridWin.png'); 
+}
+
+#puzzleGrid table { 
+  width: 276px; 
+}
+
+#msg {
+  text-align: right; 
+  color: red;
+}
+
+#endMsg {
+  text-align: right; 
+  color: green;
+}
+
