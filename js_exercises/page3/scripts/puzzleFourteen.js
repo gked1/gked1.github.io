@@ -67,7 +67,7 @@ function tileClick(){
     }
   }
 
-  // clicked cell blocked
+  // check if clicked cell is blocked
   var el = document.getElementById("msg");
   el.textContent = "Please click on the tile neighboring to empty one.";
   $("#msg").show().delay(5000).fadeOut();
