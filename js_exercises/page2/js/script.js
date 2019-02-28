@@ -21,7 +21,7 @@ function getLongWord() {
   
   for (var i=0; i<senArrDig.length; i++) {
     if (senArrDig[i] > max)
-    max = senArrDig[i]; 
+      max = senArrDig[i]; 
   }
   
   for (var i=0; i<senArrDig.length; i++) {
