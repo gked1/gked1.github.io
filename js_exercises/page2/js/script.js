@@ -1,4 +1,3 @@
-
 document.getElementById("btn").addEventListener("click", getLongWord, false);
 
 function getLongWord() {
