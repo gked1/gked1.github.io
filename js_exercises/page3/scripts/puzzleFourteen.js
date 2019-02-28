@@ -2,8 +2,8 @@
 window.onload = initPage;
 
 function initPage() {
-  var table = document.getElementById("puzzleGrid");
-  var cells = document.getElementsByTagName("td");
+  var table = document.getElementById("puzzleGrid"),
+      cells = document.getElementsByTagName("td");
   for (var i=0; i<cells.length; i++) {
     var cell = cells[i];
     cell.onclick = tileClick;
@@ -16,18 +16,18 @@ function tileClick(){
   if (cellIsEmpty(this)) {
     var el = document.getElementById("msg");
     el.textContent = "Please click on the tile with the number.";
-	$("#msg").show().delay(5000).fadeOut();
+    $("#msg").show().delay(5000).fadeOut();
     return;
   }
   
-  var currentRow = this.id.charAt(4); //cell22 c22
-  var currentCol = this.id.charAt(5);
+  var currentRow = this.id.charAt(4),
+      currentCol = this.id.charAt(5);
   
   //check left side
   if (currentCol > 1) {
-    var testCol = Number(currentCol) - 1;
-    var testCellId = "cell" + currentRow + testCol;
-    var testCell = document.getElementById(testCellId);
+    var testCol = Number(currentCol) - 1,
+        testCellId = "cell" + currentRow + testCol,
+        testCell = document.getElementById(testCellId);
     if (cellIsEmpty(testCell)) {
       swapTiles(this, testCell);  
       return;
@@ -36,9 +36,9 @@ function tileClick(){
 
   // check upper side
   if (currentRow > 1) {
-    var testRow = Number(currentRow) - 1;
-    var testCellId = "cell" + testRow + currentCol;
-    var testCell = document.getElementById(testCellId);
+    var testRow = Number(currentRow) - 1,
+        testCellId = "cell" + testRow + currentCol,
+        testCell = document.getElementById(testCellId);
     if (cellIsEmpty(testCell)) {
       swapTiles(this, testCell);
 	  return;
@@ -47,9 +47,9 @@ function tileClick(){
   
  // check right side
   if (currentCol < 4) {
-    var testCol = Number(currentCol) + 1;
-    var testCellId = "cell" + currentRow + testCol;
-    var testCell = document.getElementById(testCellId);
+    var testCol = Number(currentCol) + 1,
+        testCellId = "cell" + currentRow + testCol,
+        testCell = document.getElementById(testCellId);
     if (cellIsEmpty(testCell)) {
       swapTiles(this, testCell);
       return;
@@ -58,9 +58,9 @@ function tileClick(){
   
   //check down side
   if (currentRow < 4) {
-    var testRow = Number(currentRow) + 1;
-    var testCellId = "cell" + testRow + currentCol;
-    var testCell = document.getElementById(testCellId);
+    var testRow = Number(currentRow) + 1,
+        testCellId = "cell" + testRow + currentCol,
+        testCell = document.getElementById(testCellId);
     if (cellIsEmpty(testCell)) {
       swapTiles(this, testCell);	  
       return;
@@ -98,20 +98,20 @@ function swapTiles(selectedCell, destinationCell) {
   selectedCell.appendChild(destinationImage);
   destinationCell.appendChild(selectedImage);  
   
-  
   if (puzzleIsComplete()) {
     document.getElementById("puzzleGrid").className = "win";
   }
 }
 
 function puzzleIsComplete() {
-  var tiles = document.getElementById("puzzleGrid").getElementsByTagName("img");
-  var join = "";
+  var tiles = document.getElementById("puzzleGrid").getElementsByTagName("img"),
+      join = "";
   for (var i = 0; i < tiles.length; i++) {
     var num = tiles[i].src.substr(-6,2);
     if (num != "ty")
       join += num;
   }
+	
   if ((join == "0102030405060708091011121314") && ( tiles[tiles.length-1].src.substr(-6,2) == "ty" && tiles[tiles.length-2].src.substr(-6,2) == "ty" )) {
     var el = document.getElementById("endMsg");
     el.textContent = "Finished, you have arranged a set of tiles.";
