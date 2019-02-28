@@ -20,10 +20,10 @@ function addZero(i) {
       sec = addZero(d.getSeconds()),
       currDt = document.getElementById("timestamp");
   	
-  if(offsetHrs < 10)
+  if (offsetHrs < 10)
     offsetHrs = '0' + offsetHrs;
   
-  if(offsetMin < 10)
+  if (offsetMin < 10)
     offsetMin = '0' + offsetMin;
   
   if (timezoneOffsetMin < 0) 
