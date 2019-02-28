@@ -1,6 +1,5 @@
 
-var el = document.getElementById("btn");
-el.addEventListener("click", getLongWord, false);
+document.getElementById("btn").addEventListener("click", getLongWord, false);
 
 function getLongWord() {
   var b = document.getElementById("sentence").value,
@@ -40,6 +39,5 @@ function getLongWord() {
   	
   msg = '<h2>The longest words are: </h2><p id="result">' + join + '</p><h2> with number of characters:</h2><p>' + max + '</p>';
   
-  var el = document.getElementById('info');
-  el.innerHTML = msg;
+  document.getElementById('info').innerHTML = msg;
 }
