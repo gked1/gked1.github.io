@@ -106,7 +106,7 @@ function swapTiles(selectedCell, destinationCell) {
 function puzzleIsComplete() {
   var tiles = document.getElementById("puzzleGrid").getElementsByTagName("img"),
       join = "";
-  for (var i = 0; i < tiles.length; i++) {
+  for (var i=0; i<tiles.length; i++) {
     var num = tiles[i].src.substr(-6,2);
     if (num != "ty")
       join += num;
