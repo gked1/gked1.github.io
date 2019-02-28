@@ -14,8 +14,7 @@ function tileClick(){
 	
   // check if clicked cell is blocked
   if (cellIsEmpty(this)) {
-    var el = document.getElementById("msg");
-    el.textContent = "Please click on the tile with the number.";
+    document.getElementById("msg").textContent = "Please click on the tile with the number.";
     $("#msg").show().delay(5000).fadeOut();
     return;
   }
@@ -68,8 +67,7 @@ function tileClick(){
   }
 
   // check if clicked cell is blocked
-  var el = document.getElementById("msg");
-  el.textContent = "Please click on the tile neighboring to empty one.";
+  document.getElementById("msg").textContent = "Please click on the tile neighboring to empty one.";
   $("#msg").show().delay(5000).fadeOut();
   //$("#msg").show();
   //setTimeout(function() { $("#msg").hide(); }, 5000);
@@ -113,8 +111,7 @@ function puzzleIsComplete() {
       join += num;
   }
   if ((join == "010203040506070809101112131415") && ( tiles[tiles.length-1].src.substr(-6,2) == "ty" )) {
-    var el = document.getElementById("endMsg");
-    el.textContent = "Finished, you have arranged a set of tiles.";
+    document.getElementById("endMsg").textContent = "Finished, you have arranged a set of tiles.";
     return true;
   }
   else
