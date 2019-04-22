@@ -2,7 +2,7 @@ document.getElementById("btn").addEventListener("click", getLongWord, false);
 
 function getLongWord() {
   var b = document.getElementById("sentence").value,
-      c = b.replace(/[.!?,;:\[\]#_'"()-]/gi, '').replace(/[–„”]/gi, '').replace(/[\r\n]+/g, ' '),
+      c = b.replace(/[.!?,;:\[\]#_'"()-]/g, ' ').replace(/[–„”]/g, ' ').replace(/[\r\n]+/g, ' ').replace('  ', ' '),
       d = c.split(" "),
       senArr = d.filter(function(item, pos) { return d.indexOf(item) == pos; } ),
       senArrDig = [],
