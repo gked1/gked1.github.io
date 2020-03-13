@@ -4,4 +4,4 @@
 
 - finding the longest word(string) in text(chain of strings)
 
-- game that stands for ordering numerized tiles in ascending order(you have two level of difficulty to choose from)
+- game that stands for ordering numerized tiles in ascending order(two level of difficulty to choose from)
