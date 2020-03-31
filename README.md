@@ -1,4 +1,4 @@
-# JavaScript by examples
+# JavaScript (ES5) by examples
 
 - presenting current timestamp
 
