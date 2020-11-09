@@ -7,4 +7,4 @@
 - game that stands for ordering numerized tiles in ascending order(two level of difficulty to choose from)
 
 Live demo:
-https://gked1.github.io
+https://gked1.github.io/js-by-examples
