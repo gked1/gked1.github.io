@@ -1,6 +1,6 @@
 body { 
   font-family: Gotham, Helvetica, Arial, sans-serif;
-  background: #4472C4 url('./../media/bg.jpg');
+  background: #4472C4 url('./../media/bg.png');
   margin: 0; 
   text-align: center; 
 }
@@ -28,7 +28,7 @@ img {
 }
 
 #logo { 
-  background: url('./../media/logotype.jpg') no-repeat; 
+  background: url('./../media/logotype.png') no-repeat; 
   background-size: 80%;
   float: left; 
   height: 0; 
@@ -46,7 +46,7 @@ img {
 }
 
 #puzzleGrid.win { 
-  background: url('./../media/bgGridWin.jpg'); 
+  background: url('./../media/bgGridWin.png'); 
 }
 
 #puzzleGrid table { 
