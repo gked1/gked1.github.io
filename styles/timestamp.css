@@ -1,7 +1,7 @@
 
 body { 
     font-family: "Courier New", Courier, monospace;
-    background: url("./../media/Clock-Header.jpg") no-repeat center center fixed; 
+    background: url("./../media/clock-header.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
