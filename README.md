@@ -2,9 +2,9 @@
 
 - presenting current timestamp
 
-- finding the longest word(string) in text(chain of strings)
+- finding the longest word in the text
 
-- game that stands for ordering numerized tiles in ascending order(two level of difficulty to choose from)
+- game that stands for ordering numerized tiles
 
 Live demo:
 https://gked1.github.io/js-by-examples
