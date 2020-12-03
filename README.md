@@ -1,4 +1,4 @@
-# Website with samples of utilization JavaScript (ES5)
+# Website with samples of using JavaScript (ES5)
 
 - presenting current timestamp
 
